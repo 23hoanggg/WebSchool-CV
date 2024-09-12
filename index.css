@@ -1,0 +1,138 @@
+/* Cấu trúc tổng quát cho toàn bộ trang */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    background-color: #333;
+    padding: 10px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 16px;
+}
+
+nav a:hover {
+    background-color: white;
+    border-radius: 5px;
+    color: black;
+}
+
+.container {
+    display: flex;
+}
+
+section {
+    padding: 20px;
+    margin-bottom: 30px;
+}
+
+.left-margin {
+    width: 20%;
+}
+
+.content {
+    width: 50%;
+    padding: 20px;
+    background: linear-gradient(to right, #ff7e5f, #edbe9a);
+}
+
+.right-margin {
+    width: 30%;
+}
+
+.profile-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.info-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.info-item svg {
+    margin-right: 8px;
+    flex-shrink: 0;
+}
+
+.icon-heading {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 10px;
+    font-family:monospace;
+}
+
+.icon-heading svg {
+    flex-shrink: 0;
+}
+
+h1,
+h2,
+h3 {
+    color: #333;
+}
+
+img {
+    max-width: 150px;
+    border-radius: 20%;
+    margin-bottom: 20px;
+}
+
+#media {
+    /* max-width: 600px; */
+    margin: 0 auto;
+    padding: 20px;
+    background: linear-gradient(to right, #ebadad, rgb(238, 208, 208));
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.music-list {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    margin-top: 20px;
+}
+
+audio,
+video {
+    width: 100%;
+    outline: none;
+    border-radius: 5px;
+}
+
+.music-list div {
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    color: #872973;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.music-list audio {
+    margin: 0 auto;
+    display: block;
+}
